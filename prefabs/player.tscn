@@ -12,7 +12,7 @@
 [sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
-radius = 8.34919
+radius = 24.5571
 
 [sub_resource type="Animation" id=2]
 
@@ -84,11 +84,11 @@ samples/shoot_02 = {
 [node name="player" type="Node2D"]
 
 script/script = ExtResource( 1 )
-move_force = Vector2( 150, 0 )
-max_horizontal_velocity = 200
+move_force = Vector2( 450, 0 )
+max_horizontal_velocity = 600
 max_vertical_velocity = 450
 lives = 1
-feet_distance = 20
+feet_distance = 60
 ammo = 0
 
 [node name="body" type="RigidBody2D" parent="."]
@@ -117,6 +117,7 @@ damp_override/angular = -1.0
 
 [node name="sprite" type="Sprite" parent="body"]
 
+transform/scale = Vector2( 3, 3 )
 texture = ExtResource( 2 )
 
 [node name="collision_shape" type="CollisionShape2D" parent="body"]

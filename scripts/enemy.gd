@@ -1,8 +1,8 @@
 extends Node2D
 
-export var move_speed = Vector2(150, 0)
-export var max_horizontal_speed = 200
-export var max_vertical_speed = 450
+export var move_speed = Vector2(450, 0)
+export var max_horizontal_speed = 600
+export var max_vertical_speed = 1050
 
 onready var body    = get_node("body")
 onready var hit_box = get_node("hit box")

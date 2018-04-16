@@ -8,7 +8,7 @@ onready var slider_sound_volume = canvas.get_node("slider_sound_volume")
 onready var slider_music_volume = canvas.get_node("slider_music_volume")
 onready var btn_return          = canvas.get_node("btn_return")
 
-const OFFSET_HIDE = Vector2(1000,1000)
+const OFFSET_HIDE = Vector2(2000,2000)
 const OFFSET_SHOW = Vector2(0,0)
 
 signal btn_return_pressed

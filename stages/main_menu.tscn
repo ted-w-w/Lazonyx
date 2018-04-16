@@ -71,9 +71,10 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
-margin/right = 640.0
-margin/bottom = 480.0
+margin/right = 1920.0
+margin/bottom = 1080.0
 texture = ExtResource( 2 )
+expand = true
 stretch_mode = 0
 __meta__ = {
 "_edit_lock_": true
@@ -159,10 +160,10 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-margin/left = 171.0
-margin/top = 387.0
-margin/right = 468.0
-margin/bottom = 403.0
+margin/left = 813.0
+margin/top = 688.0
+margin/right = 1110.0
+margin/bottom = 704.0
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.609375, 0, 0.228516, 1 )
 text = "TOP SCORE: XXX"
@@ -177,10 +178,10 @@ focus/ignore_mouse = false
 focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 188.0
-margin/top = 184.0
-margin/right = 450.0
-margin/bottom = 235.0
+margin/left = 830.0
+margin/top = 491.0
+margin/right = 1092.0
+margin/bottom = 542.0
 custom_constants/separation = 16
 alignment = 1
 __meta__ = {
@@ -227,11 +228,13 @@ params/stretch_mode = 3
 
 [node name="menu_settings" parent="." instance=ExtResource( 16 )]
 
-editor/display_folded = true
-
 [node name="canvas" parent="menu_settings"]
 
-offset = Vector2( 640, 480 )
+offset = Vector2( 1920, 1080 )
+
+[node name="texture_bg" parent="menu_settings/canvas"]
+
+stretch_mode = 1
 
 [node name="music_player" type="SamplePlayer" parent="."]
 
@@ -254,7 +257,13 @@ default/chorus_send = 0.0
 
 [node name="canvas" parent="menu_controls"]
 
-offset = Vector2( -640, 480 )
+layer = 4
+offset = Vector2( -1920, 1080 )
+
+[node name="texture_bg" parent="menu_controls/canvas"]
+
+expand = true
+stretch_mode = 0
 
 
 [editable path="menu_settings"]

@@ -7,7 +7,7 @@ onready var btn_main_menu = canvas.get_node("container_btns/btn_main_menu")
 onready var btn_controls  = canvas.get_node("container_btns/btn_controls")
 
 
-const OFFSET_HIDE = Vector2(1000,1000)
+const OFFSET_HIDE = Vector2(2000,2000)
 const OFFSET_SHOW = Vector2(0,0)
 
 func _ready():

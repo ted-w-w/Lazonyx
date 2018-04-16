@@ -6,7 +6,7 @@
 [sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
-radius = 6.02877
+radius = 25.5981
 
 [node name="orb" type="RigidBody2D"]
 
@@ -37,6 +37,7 @@ script/script = ExtResource( 1 )
 [node name="sprite" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0.115982, 0.115986 )
+transform/scale = Vector2( 3, 3 )
 texture = ExtResource( 2 )
 
 [node name="collision_shape" type="CollisionShape2D" parent="."]

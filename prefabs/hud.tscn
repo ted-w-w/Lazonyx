@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=1]
+[gd_scene load_steps=7 format=1]
 
 [ext_resource path="res://scripts/hud.gd" type="Script" id=1]
 [ext_resource path="res://fonts/slkscr.ttf" type="DynamicFontData" id=2]
@@ -25,13 +25,6 @@ font/use_filter = false
 font/font = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=4]
-
-font/size = 16
-font/use_mipmaps = false
-font/use_filter = false
-font/font = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=5]
 
 font/size = 16
 font/use_mipmaps = false
@@ -80,7 +73,6 @@ margin/left = 277.0
 margin/top = 10.0
 margin/right = 147.0
 margin/bottom = 27.0
-custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_as_outline = 3
@@ -100,7 +92,7 @@ margin/left = 597.0
 margin/top = 42.0
 margin/right = 188.0
 margin/bottom = 59.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_as_outline = 3
 text = "Top Score: XXX"
@@ -118,7 +110,7 @@ margin/left = 493.0
 margin/top = 10.0
 margin/right = 592.0
 margin/bottom = 27.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_as_outline = 3
@@ -138,7 +130,7 @@ margin/left = 491.0
 margin/top = 25.0
 margin/right = 592.0
 margin/bottom = 42.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_as_outline = 3

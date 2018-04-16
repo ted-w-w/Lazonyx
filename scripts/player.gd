@@ -5,17 +5,17 @@ const SOUND_JUMP        = "jump_00"
 const SOUND_FIRENOAMMO  = "hit_01"
 const SOUND_PICKUP_AMMO = "freesound_150220_killkhan_reload_trimmed"
 
-export var move_force = Vector2(150, 0)
-export var max_horizontal_velocity = 200
-export var max_vertical_velocity = 350
+export var move_force = Vector2(450, 0)
+export var max_horizontal_velocity = 600
+export var max_vertical_velocity = 500
 export var lives = 0
-export var feet_distance = 20
+export var feet_distance = 60
 export var ammo = 0
 
 var should_shoot        = false
 var jump_button_pressed = false
 
-const LASER_MAX_LENGTH = 700
+const LASER_MAX_LENGTH = 2100
 onready var body           = get_node("body")
 onready var laser_sprite   = get_node("sprite_laser")
 onready var anim           = get_node("anim")
